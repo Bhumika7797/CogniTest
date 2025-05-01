@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <label for="theme-toggle-checkbox" class="toggle-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="toggle-ball"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Webcam Container (positioned in top-right corner) -->
+        <div id="webcam-container" class="webcam-container hidden">
+            <div class="webcam-header">
+                <span><i class="fas fa-video"></i> Webcam Monitor</span>
+            </div>
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas" class="hidden"></canvas>
+            <div class="webcam-status">
+                <span id="capture-status">Monitoring...</span>
+            </div>
+        </div>
+
+        <!-- Submit Exam Button (fixed at bottom-right) -->
+        <div id="submit-exam-container" class="submit-exam-container hidden">
+            <button id="submit-exam-btn" class="btn primary-btn">
+                <i class="fas fa-paper-plane"></i> Submit Exam
+            </button>
+        </div>
+
+        <div class="quiz-wrapper">
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="screen">
+                <div class="welcome-content">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <h1>Adaptive Quiz Challenge</h1>
+                    <p class="subtitle">Test your knowledge with our AI-powered adaptive quiz</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="feature-text">Adaptive Difficulty</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="feature-text">Webcam Monitoring</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-text">Performance Analysis</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="feature-text">Instant Results</div>
+                        </div>
+                    </div>
+                    <p class="privacy-note"><i class="fas fa-exclamation-circle"></i> Your webcam will be activated during the quiz. Images will be captured for monitoring purposes.</p>
+                    <button id="start-quiz-btn" class="btn primary-btn">
+                        <i class="fas fa-play"></i> Start Quiz
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Screen (Hidden initially) -->
+            <div id="quiz-screen" class="screen hidden">
+                <div class="quiz-header">
+                    <div class="quiz-info">
+                        <span id="question-number">Question 1/10</span>
+                        <div class="difficulty-indicator">
+                            <span>Difficulty:</span>
+                            <span id="difficulty-level">Medium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h2 id="question-text">Question text will appear here</h2>
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be inserted here dynamically -->
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <button id="submit-answer-btn" class="btn primary-btn">
+                        <i class="fas fa-check"></i> Submit Answer
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Screen (Hidden initially) -->
+            <div id="results-screen" class="screen hidden">
+                <div class="results-header">
+                    <div class="results-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h1>Quiz Results</h1>
+                </div>
+                
+                <div class="score-container">
+                    <div class="score-circle">
+                        <div class="score-inner">
+                            <span id="final-score">0/10</span>
+                        </div>
+                    </div>
+                    <h2>Your Score</h2>
+                </div>
+                
+                <div class="results-details-container">
+                    <h3><i class="fas fa-list-check"></i> Question Summary</h3>
+                    <div class="results-details" id="results-details">
+                        <!-- Results details will be inserted here dynamically -->
+                    </div>
+                </div>
+                
+                <button id="restart-quiz-btn" class="btn primary-btn">
+                    <i class="fas fa-redo"></i> Restart Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
