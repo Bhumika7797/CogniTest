@@ -87,5 +87,9 @@ Contributions are welcome! Fork the repo and raise a pull request. For major cha
 This project is licensed under the MIT License - see the LICENSE file.
 
 ## USER INTERFACE
-![image](https://github.com/user-attachments/assets/ad3fe947-e259-4395-ab7f-3db2009bd9b7)
-![image](https://github.com/user-attachments/assets/32423de3-2f7b-4aa6-826b-8d7862d13c33)
+![image](https://github.com/user-attachments/assets/a909d63d-1401-4f30-838f-273b36c677d4)
+![image](https://github.com/user-attachments/assets/e8a2c27a-9b82-43eb-94e9-14cda6331df7)
+![image](https://github.com/user-attachments/assets/3553befb-991f-49a7-9454-e23a73648cca)
+
+
+
