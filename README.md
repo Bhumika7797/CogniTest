@@ -7,11 +7,28 @@ This full-stack app includes:
 - Machine learning models for behavior-based evaluation
 ---
 ## 🗂️ Project Structure
-<details>
-  <summary>📁 <strong>Folder Structure (Click to expand)</strong></summary>
+```
 
-ai-exam-app/ ├── quiz/ # Frontend application │ ├── index.html │ ├── script.js │ ├── script2.js │ └── styles.css │ └── quiz-backend/ # Backend API (FastAPI) ├── app/ │ ├── database/ # DB config and models │ ├── ml_models/ # AI/ML models for prediction │ ├── models/ # Pydantic models │ ├── routes/ # API route definitions │ ├── schemas/ # Data validation schemas │ ├── utils/ # Helper functions │ ├── init.py │ └── main.py # FastAPI entry point ├── requirements.txt ├── features_log.csv # Logs of extracted features └── README.md
-</details>
+ai-exam-app/
+├── quiz/                         # Frontend application
+│   ├── index.html
+│   ├── script.js
+│   ├── script2.js
+│   └── styles.css
+├── quiz-backend/                # Backend API (FastAPI)
+│   ├── app/
+│   │   ├── database/            # DB config and models
+│   │   ├── ml_models/           # AI/ML models for prediction
+│   │   ├── models/              # Pydantic models
+│   │   ├── routes/              # API route definitions
+│   │   ├── schemas/             # Data validation schemas
+│   │   ├── utils/               # Helper functions
+│   │   ├── __init__.py
+│   │   └── main.py              # FastAPI entry point
+│   ├── requirements.txt
+│   ├── features_log.csv         # Logs of extracted features
+│  
+```
 
 
 ---
